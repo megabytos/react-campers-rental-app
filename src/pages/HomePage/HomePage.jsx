@@ -1,11 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../../components/Button/Button';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import css from './HomePage.module.css';
 
 const HomePage = () => {
   const location = useLocation();
   return (
     <main className={css.main}>
+      <PageTitle title="Campers of your dreams" />
       <div className={css.container}>
         <h1>Campers of your dreams</h1>
         <p>You can find everything you want in our catalog</p>

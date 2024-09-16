@@ -25,7 +25,7 @@
 
 @media (hover: hover) {
   .btn.btn:hover {
-    box-shadow: var(--shadow-regular);
+    background-color: var(--button-hover);
   }
 }
 

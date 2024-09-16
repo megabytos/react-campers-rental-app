@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import { useState } from 'react';
 import * as Yup from 'yup';
 import Button from '../Button/Button';
+import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
 import clsx from 'clsx';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -80,6 +81,7 @@ export default function ProductForm() {
           </Form>
         )}
       </Formik>
+      <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
     </div>
   );
 }

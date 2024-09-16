@@ -5,6 +5,7 @@ import { selectError, selectLoading } from '../../redux/productsSlice';
 import ProductsList from '../../components/ProductsList/ProductsList';
 import ProductsFilters from '../../components/ProductsFilters/ProductsFilters';
 import Loader from '../../components/Loader/Loader';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import css from './CatalogPage.module.css';
 
 const CatalogPage = () => {
@@ -18,6 +19,7 @@ const CatalogPage = () => {
 
   return (
     <main>
+      <PageTitle title="Catalog of Campers" />
       <div className={css.container}>
         {loading && !error && <Loader />}
         <aside className={css.filters}>

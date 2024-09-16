@@ -88,6 +88,7 @@
   line-height: 1.1;
   color: var(--main);
   text-transform: capitalize;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 1440px) {

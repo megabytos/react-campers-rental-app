@@ -3,11 +3,11 @@ import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductById } from '../../redux/productsOps';
 import { selectProductById, selectLoading } from '../../redux/productsSlice';
-
-import css from './ProductPage.module.css';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import ProductForm from '../../components/ProductForm/ProductForm';
 import Loader from '../../components/Loader/Loader';
 import Icon from '../../components/Icon/Icon';
+import css from './ProductPage.module.css';
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -22,6 +22,7 @@ const ProductPage = () => {
 
   return (
     <main>
+      <PageTitle title={product.name} />
       {loading && <Loader />}
       {!!product && (
         <div className={css.wrapper}>

@@ -1,23 +1,21 @@
 .features {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 14px;
+  gap: 50px;
+  padding: 44px 52px;
   background: var(--inputs);
   border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .features {
-    gap: 70px;
-    padding: 24px;
+    gap: 70px;    
   }
 }
 
 @media screen and (min-width: 1440px) {
   .features {
-    gap: 100px;
-    padding: 44px 52px;
+    gap: 100px;    
   }
 }
 
@@ -45,6 +43,7 @@
   line-height: 1.1;
   color: var(--main);
   text-transform: capitalize;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 1440px) {
@@ -98,7 +97,7 @@
   }
 }
 
-.item {
+.list li {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -108,7 +107,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .item {
+  .list li {
     font-size: var(--font-small);
   }
 }

@@ -34,24 +34,12 @@ const ProductFeatures = () => {
         <h4 className={css.title}>Vehicle Details</h4>
         <hr className={css.separator} />
         <ul className={css.list}>
-          <li className={css.item}>
-            Form <span>{product.form}</span>
-          </li>
-          <li className={css.item}>
-            Length <span>{length}</span>
-          </li>
-          <li className={css.item}>
-            Width <span>{product.width}</span>
-          </li>
-          <li className={css.item}>
-            Height <span>{product.height}</span>
-          </li>
-          <li className={css.item}>
-            Tank <span>{product.tank}</span>
-          </li>
-          <li className={css.item}>
-            Consumption <span>{product.consumption}</span>
-          </li>
+          <li>Form <span>{product.form}</span></li>
+          <li>Length <span>{product.length}</span></li>
+          <li>Width <span>{product.width}</span></li>
+          <li>Height <span>{product.height}</span></li>
+          <li>Tank <span>{product.tank}</span></li>
+          <li>Consumption <span>{product.consumption}</span></li>
         </ul>
       </div>
     </div>

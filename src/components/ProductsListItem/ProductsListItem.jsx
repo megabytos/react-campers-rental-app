@@ -4,6 +4,7 @@ import Icon from '../Icon/Icon';
 import { forwardRef } from 'react';
 import { selectIsFavorite, addFavorite, removeFavorite } from '../../redux/favoritesSlice';
 import toast from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import css from './ProductsListItem.module.css';
 
 const ProductsListItem = forwardRef(({ product }, ref) => {
@@ -76,6 +77,7 @@ const ProductsListItem = forwardRef(({ product }, ref) => {
           Show More
         </Button>
       </div>
+      <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
     </>
   );
 });

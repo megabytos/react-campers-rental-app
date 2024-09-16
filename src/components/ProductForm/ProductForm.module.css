@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  padding: 14px;
+  padding: 24px;
   gap: 20px;
   border: 1px solid var(--gray-light);
   border-radius: 10px;
@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 1024px) {
   .wrapper {
-    padding: 24px;
+    padding: 44px;
     gap: 24px;
   }
 }
