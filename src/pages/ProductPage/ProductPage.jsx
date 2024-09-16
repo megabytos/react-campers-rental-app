@@ -22,10 +22,11 @@ const ProductPage = () => {
 
   return (
     <main>
-      <PageTitle title={product.name} />
+      <PageTitle title="Camper Page" />
       {loading && <Loader />}
       {!!product && (
         <div className={css.wrapper}>
+          <PageTitle title={product.name} />
           <div className={css.header}>
             <div className={css.headerContent}>
               <h2 className={css.productTitle}>{product.name}</h2>
