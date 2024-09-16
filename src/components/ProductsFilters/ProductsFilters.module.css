@@ -1,0 +1,119 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.locationLabel {
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.locationInput {
+  border-radius: 12px;
+  padding: 18px 18px 18px 48px;
+  height: 56px;
+  width: 100%;
+  background: var(--inputs);
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  color: var(--main);
+  border: 1px solid var(--gray-light);
+}
+
+.title {
+  font-size: var(--font-small);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.equipment,
+.vehicleType {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subTitle {
+  font-size: var(--font-medium);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--gray-light);
+}
+
+.equipmentOptions,
+.vehicleTypeOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  grid-auto-rows: 65px;
+  gap: 4px 8px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+  .equipmentOptions,
+  .vehicleTypeOptions {
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    grid-auto-rows: 96px;
+    gap: 8px 12px;
+    font-size: var(--font-small);
+  }
+}
+
+.equipmentLabel,
+.vehicleTypeLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 2px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.equipmentLabel:focus,
+.vehicleTypeLabel:focus,
+.equipmentLabel:has(:checked),
+.vehicleTypeLabel:has(:checked) {
+  border-color: var(--button);
+  box-shadow: var(--shadow-small);
+}
+
+@media (hover: hover) {
+  .equipmentLabel:hover,
+  .vehicleTypeLabel:hover {
+    border-color: var(--button);
+    box-shadow: var(--shadow-small);
+  }
+}
+
+.checkbox,
+.radioButton {
+  display: none;
+}

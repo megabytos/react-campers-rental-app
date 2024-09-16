@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--main);    
+}
+
+.menu a {    
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu  :global .active {
+    color: var(--button-hover);
+    text-decoration: none;
+}
+
+.menu  :global .active:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.logo {
+    width: 136px; 
+    margin-top: 4px;    
+}
+

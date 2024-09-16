@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 64px;  
+  margin: 48px auto;  
+}
+.filters {
+  flex-basis: 242px;  
+  min-width: 242px;
+}
+@media screen and (min-width: 1440px) {
+  .filters {
+    flex-basis: 360px;  
+    min-width: 360px;
+  }
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+

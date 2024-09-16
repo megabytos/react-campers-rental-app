@@ -1,0 +1,53 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.small {
+  width: 20px;
+  height: 20px;
+}
+
+.smallest {
+  width: 16px;
+  height: 16px;
+}
+
+.iconHeart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: fill var(--animation-cubicBezier);
+}
+
+.iconMap {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 18px;
+  left: 20px;
+}
+
+.iconStar {
+  width: 16px;
+  height: 16px;
+  fill: var(--rating);
+}
+
+.iconStarEmpty {
+  width: 16px;
+  height: 16px;
+  fill: var(--badges);
+}
+
+.iconHeart:focus,
+.active {
+  fill: var(--button);
+}
+
+@media (hover: hover) {
+  .iconHeart:hover {
+    fill: var(--button);
+  }
+}

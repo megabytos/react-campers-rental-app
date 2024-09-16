@@ -1,0 +1,98 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    gap: 24px;
+    padding: 12px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list {
+    gap: 44px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: var(--font-medium);
+  line-height: 1.33333;
+  color: var(--button);
+  border-radius: 50%;
+  background-color: var(--badges);
+}
+
+@media screen and (min-width: 1440px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-large);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+}
+
+.comment {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+@media screen and (min-width: 1440px) {
+  .comment {
+    font-size: var(--font-small);
+  }
+}
+
+.noReviews {
+  font-size: var(--font-small);
+  text-align: center;
+  padding: 20px;
+  color: var(--main);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1440px) {
+  .noReviews {
+    font-size: var(--font-medium);
+  }
+}

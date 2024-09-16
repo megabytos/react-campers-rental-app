@@ -1,0 +1,252 @@
+.additional {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    gap: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+.menu a {
+  position: relative;
+  padding-bottom: 14px;
+  font-size: var(--font-small);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+@media screen and (min-width: 1440px) {
+  .menu a {
+    padding-bottom: 24px;
+    font-size: var(--font-medium);
+  }
+}
+
+.menu a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--button);
+  transition: width var(--animation-cubicBezier);
+}
+
+.menu :global .active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--button);
+  transition: width var(--animation-cubicBezier);
+}
+
+.section {
+  padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 32px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding: 48px 0 80px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 48px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    gap: 28px;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 200px;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+    grid-auto-rows: 312px;
+    gap: 48px;
+  }
+}
+
+.galleryItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow-small);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .galleryItem:hover .galleryImage {
+    transform: scale(1.05);
+  }
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--animation-cubicBezier);
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+@media screen and (min-width: 1440px) {
+  .description {
+    font-size: var(--font-small);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    gap: 40px;
+    margin-top: 14px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.productTitle,
+.price {
+  font-weight: 600;
+  font-size: var(--font-medium);
+  line-height: 1.33333;
+  color: var(--main);
+}
+
+@media screen and (min-width: 1440px) {
+  .productTitle,
+  .price {
+    font-size: var(--font-large);
+  }
+}
+
+.productPrice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .productPrice {
+    justify-self: end;
+    order: -1;
+  }
+}
+
+.productRating {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+@media screen and (min-width: 768px) {
+  .productRating {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.rating,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .rating,
+  .location {
+    font-size: var(--font-small);
+  }
+}
+
+.ratingValue {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}

@@ -1,0 +1,50 @@
+.btn {
+  height: 46px;
+  align-self: center;
+  border-radius: 200px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  box-shadow: var(--shadow-small);
+  transition: background-color var(--animation-cubicBezier), box-shadow var(--animation-cubicBezier),
+    border-color var(--animation-cubicBezier);
+}
+
+@media screen and (min-width: 375px) {
+  .btn {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    height: 56px;
+    line-height: 1.5;
+  }
+}
+
+@media (hover: hover) {
+  .btn.btn:hover {
+    box-shadow: var(--shadow-regular);
+  }
+}
+
+.contained {
+  width: 166px;
+  background-color: var(--button);
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  .contained:hover {
+    background-color: var(--button-hover);
+  }
+}
+
+.contained.main {
+  width: 173px;
+}
+
+.center {
+  align-self: center;
+}

@@ -1,0 +1,19 @@
+.loadMore {
+  width: 145px;
+  height: 56px;
+  margin-top: 40px;
+  cursor: pointer;
+  line-height: 1.5;
+  align-self: center;
+  border-radius: 200px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  background-color: transparent;
+  border: 1px solid var(--gray-light);
+  color: var(--main);  
+  transition:  border-color var(--animation-cubicBezier);
+}
+
+.loadMore:hover {
+  border: 1px solid var(--button-hover);                
+}

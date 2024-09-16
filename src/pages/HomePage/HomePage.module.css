@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  color: var(--inputs);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/assets/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi) or (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/assets/hero@2x.jpg);
+  }
+}
+
+@media (min-resolution: 288dpi) or (min-resolution: 3dppx) {
+  .main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/assets/hero@3x.jpg);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 64px;
+  }
+}
+
+.main H1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .main H1 {
+    font-size: 48px;
+    line-height: 0.66667;
+  }
+}
+
+.main p {
+  font-weight: 600;
+  font-size: var(--font-small);
+  line-height: 1.33333;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .main p {
+    font-size: var(--font-large);
+  }
+}
+
+.link {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+}
