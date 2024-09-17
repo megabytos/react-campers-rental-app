@@ -60,15 +60,9 @@
   transition: width var(--animation-cubicBezier);
 }
 
-.menu:hover a::after  {  
+.menu li:first-child:has(+ li a:global.active) a:global.active::after  {
   background-color: transparent;
 }
-
-.menu a:hover::after,
-.menu a:hover ~ a {  
-  background-color: var(--button);
-}
-
 
 .section {
   padding: 16px 0;
